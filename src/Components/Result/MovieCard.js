@@ -1,0 +1,17 @@
+import React from 'react'
+import style from './result.module.css'
+import MovieDetail from './MovieDetail'
+
+const MovieCard = (props) => {
+  return (
+    <div className={style.movie_card}>
+    <MovieDetail label="Episode" value={props.movie.episode_id} />
+    <MovieDetail label="Title" value={props.movie.title} />
+    <MovieDetail label="Release Date" value={props.movie.release_date} />
+    <MovieDetail label="Director" value={props.movie.director} />
+    <MovieDetail label="Producer" value={props.movie.producer} />
+  </div>
+  )
+}
+
+export default MovieCard
